@@ -583,6 +583,273 @@ In giving I receive.
                         </pre>
                     </div>
                 </section>
+
+
+                <!-- #7: I Love to See the Temple -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div 
+                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center"
+                    >
+                        #7
+                    </div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/lindon-temple.jpg')"></div>
+                    <div class="bg-indigo-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2 md:text-4xl">I Love to See the Temple</h2>
+                        <p class="italic pb-4">Primary</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/i-love-to-see-the-temple?lang=eng"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-indigo-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/EJNN8RuOJyw" 
+                            title="YouTube video player"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        
+                        <pre 
+                            class="lyrics pt-4 text-sm sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90">
+
+1. I love to see the temple.
+I’m going there someday
+To feel the Holy Spirit,
+To listen and to pray.
+For the temple is a house of God,
+A place of love and beauty.
+I’ll prepare myself 
+While I am young;
+This is my sacred duty.
+
+2. I love to see the temple.
+I’ll go inside someday.
+I’ll cov’nant with my Father;
+I’ll promise to obey.
+For the temple is a holy place
+Where we are sealed together.
+As a child of God, 
+I’ve learned this truth:
+A fam’ly is forever.
+
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #8: Search, Ponder, and Pray -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div 
+                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center"
+                    >
+                        #8
+                    </div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/family_scripture_study.jpeg')"></div>
+                    <div class="bg-green-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2 md:text-4xl">Search, Ponder, and Pray</h2>
+                        <p class="italic pb-4">Primary</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/search-ponder-and-pray?lang=eng"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-green-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/3TJMlE0HphY" 
+                            title="YouTube video player"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        
+                        <pre 
+                            class="lyrics pt-4 text-sm sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90">
+
+1. I love to read the holy scriptures,
+And, ev’ry time I do,
+I feel the Spirit start to grow within my heart-
+A testimony that they’re true.
+
+Chorus:
+
+Search, ponder, and pray
+Are the things that I must do.
+The Spirit will guide, and, deep inside,
+I’ll know the scriptures are true.
+
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #9: Families Can Be Together Forever -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div 
+                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-yellow-500 flex items-center justify-center"
+                    >
+                        #9
+                    </div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/family_temple_grounds.jpeg')"></div>
+                    <div class="bg-yellow-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2 md:text-4xl">Families Can Be Together Forever</h2>
+                        <p class="italic pb-4">Primary and Congregation</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/families-can-be-together-forever?lang=eng"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-yellow-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/JD7BhTV46cs" 
+                            title="YouTube video player"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        
+                        <pre 
+                            class="lyrics pt-4 text-sm sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90">
+
+1. I have a fam’ly here on earth.
+They are so good to me.
+I want to share my life with them 
+Through all eternity.
+
+Chorus:
+
+Fam’lies can be together forever
+Through Heav’nly Father’s plan.
+I always want to be with my own family,
+And the Lord has shown me how I can.
+The Lord has shown me how I can.
+
+2. While I am in my early years,
+I’ll prepare most carefully,
+So I can marry in God’s temple 
+For eternity.
+
+                        </pre>
+                    </div>
+                </section>
             </main>
             
         </div>
