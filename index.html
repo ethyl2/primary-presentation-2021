@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lindon 13th Ward Children's Sacrament Meeting Presentation Songs</title>
+        <meta name="description" content="Resources to learn the Lindon 13th Ward Children's Sacrament Meeting Presentation Songs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="w-full">
+            <header class="px-4 py-10 bg-yellow-200 w-full sticky">
+                <h1 class="text-center text-2xl font-bold md:text-4xl">Lindon 13th Ward <br /> Children's Sacrament Meeting Presentation Songs</h1>
+            </header>
+            <main class="flex flex-wrap pt-12 w-full items-start justify-around mx-auto gap-12">
+                <!-- #1: I Am a Child of God -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-blue-500 flex items-center justify-center">#1</div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/jesus-and-child.jpeg')""></div>
+                    <div class="bg-blue-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2">I Am a Child of God</h2>
+                        <p class="italic pb-4">Primary and Congregation</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-blue-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-blue-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/i-am-a-child-of-god?lang=eng#"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-blue-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/JOrcqqpHCt8" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <pre 
+                            class="lyrics pt-4 text-base sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" >
+1. I am a child of God,
+And he has sent me here,
+Has given me an earthly home
+With parents kind and dear.
+
+Chorus:
+
+Lead me, guide me, walk beside me,
+Help me find the way.
+Teach me all that I must do
+To live with him someday.
+
+2. I am a child of God,
+And so my needs are great;
+Help me to understand his words
+Before it grows too late.
+
+3. I am a child of God.
+Rich blessings are in store;
+If I but learn to do his will,
+I’ll live with him once more.
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #2: My Own Sacred Grove -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-xl w-full">
+                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center">#2</div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/sacred-grove.jpeg')"></div>
+                        <div class="bg-green-500 w-full text-center text-white font-bold py-4">
+                            <h2 class="text-2xl pb-2">My Own Sacred Grove</h2>
+                            <p class="italic pb-4">Primary</p>
+                            <div class="flex items-center justify-center space-x-8">
+                                <span 
+                                    @click="showVideo = !showVideo"
+                                    @keyup.enter="showVideo = !showVideo" 
+                                    class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                    title="Play Video"
+                                    tabindex="0"
+                                >
+                                    music_video
+                                </span>
+                                <span 
+                                    class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                    @click="showLyrics = !showLyrics"
+                                    @keyup.enter="showLyrics = !showLyrics"
+                                    title="Show Lyrics"
+                                    tabindex="0"
+                                >
+                                    chat
+                                </span>
+                                <a 
+                                    href="https://www.angiekillian.com/product-page/my-own-sacred-grove"
+                                    target="_blank"
+                                    title="Go to Sheet Music"
+                                    > 
+                                    <span class="material-icons text-5xl cursor-pointer hover:text-green-800">
+                                        music_note
+                                    </span>
+                                </a> 
+                            </div>
+                            <iframe 
+                                x-show="showVideo"
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0 transform scale-90"
+                                x-transition:enter-end="opacity-100 transform scale-100"
+                                x-transition:leave="transition ease-in duration-300"
+                                x-transition:leave-start="opacity-100 transform scale-100"
+                                x-transition:leave-end="opacity-0 transform scale-90" 
+                                class="mx-auto"
+                                width="100%"
+                                height="315"
+                                src="https://www.youtube.com/embed/W8UnRqgDlr8" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <pre 
+                                class="lyrics pt-4 text-sm sm:text-lg "
+                                x-show="showLyrics"
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0 transform scale-90"
+                                x-transition:enter-end="opacity-100 transform scale-100"
+                                x-transition:leave="transition ease-in duration-300"
+                                x-transition:leave-start="opacity-100 transform scale-100"
+                                x-transition:leave-end="opacity-0 transform scale-90" >
+1. Joseph Smith went to a grove full of trees.
+Seeking God’s wisdom, he fell to his knees.
+As he pled with the heavens the sky filled with light,
+And the Father appeared with His Son Jesus Christ
+Standing above in the air,
+Coming to answer his prayer.
+    
+Chorus:
+
+I will find my own sacred grove
+Away from all of the noise in the world.
+I will turn to prayer,
+For I know He’s there.
+I will find my own sacred grove.
+    
+2. So many choices with so much at stake.
+Life’s full of pathways, but which should I take?
+If I lift up in prayer in the name of the Son,
+Through the pow’r of the Holy Ghost answers will come.
+Heavenly Father is there
+Ready to answer my prayer.
+
+Bridge:
+Sometimes the answers take time,
+So I’ll listen in heart and mind.
+Revelation will come my way
+As I wait patiently in faith.
+
+Coda:
+I will find my own sacred grove.
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #3: When I Am Baptized -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-purple-500 flex items-center justify-center">#3</div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/rainbow.jpg')""></div>
+                    <div class="bg-purple-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2">When I Am Baptized</h2>
+                        <p class="italic pb-4">CTR 7 Class</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-purple-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-purple-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/when-i-am-baptized?lang=eng"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-purple-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src='//players.brightcove.net/710874264001/default_default/index.html?videoId=5401032788001'  
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <pre 
+                            class="lyrics pt-4 text-sm sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" >
+1. I like to look for rainbows 
+Whenever there is rain
+And ponder on the beauty 
+Of an earth made clean again.
+
+Chorus:
+
+I want my life to be as clean 
+As earth right after rain.
+I want to be the best I can 
+And live with God again.
+
+2. I know when I am baptized 
+My wrongs are washed away,
+And I can be forgiven 
+And improve myself each day.
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #4: Gethsemane -->
+                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center">#4</div>
+                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/gethsemane.jpeg')"></div>
+                    <div class="bg-indigo-500 w-full text-center text-white font-bold py-4">
+                        <h2 class="text-2xl pb-2">Gethsemane</h2>
+                        <p class="italic pb-4">Primary</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                @click="showVideo = !showVideo" 
+                                @keyup.enter="showVideo = !showVideo"
+                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics" 
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a 
+                                href="https://media.ldscdn.org/pdf/magazines/friend-march-2018/2018-03-22-gethsemane-eng.pdf"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                > 
+                                <span class="material-icons text-5xl cursor-pointer hover:text-indigo-800">
+                                    music_note
+                                </span>
+                            </a> 
+                        </div>
+                        <iframe 
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" 
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src='//players.brightcove.net/1241706627001/default_default/index.html?videoId=5738042442001' 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        
+                        <pre 
+                            class="lyrics pt-4 text-sm sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90">
+
+Jesus climbed the hill 
+To the garden still.
+His steps were heavy and slow.
+Love and a prayer took Him there
+To the place only He could go.
+Gethsemane. Jesus loves me,
+So He went willingly to Gethsemane.
+
+He felt all that was sad, 
+Wicked, or bad,
+All the pain we would ever know.
+While His friends were asleep, 
+He fought to keep
+His promise made long ago.
+Gethsemane. Jesus loves me,
+So He went willingly 
+To Gethsemane.
+
+The hardest thing that ever was done,
+The greatest pain that ever was known,
+The biggest battle that ever was won—
+This was done by Jesus!
+The fight was won by Jesus!
+
+Gethsemane. Jesus loves me,
+So He gave His gift to me 
+In Gethsemane.
+Gethsemane. Jesus loves me,
+So He gives His gift to me 
+From Gethsemane.   
+
+                        </pre>
+                    </div>
+                </section>
+            </main>
+            
+        </div>
+        
+    </body>
+</html>
