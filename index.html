@@ -18,20 +18,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="https://ethyl2.github.io/primary-presentation-2021/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico?">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="w-full pb-24">
+        <div class="w-full pb-16 md:pb-24">
             <header id="header" class="px-4 py-10 bg-yellow-200 w-full sticky">
                 <h1 class="text-center text-2xl font-bold md:text-5xl">Lindon 13th Ward</h1>
                 <h1 class="text-center text-xl font-bold md:text-3xl">Children's Sacrament Meeting Presentation Songs</h1>
             </header>
+            <nav class="mx-4 divide-x flex flex-wrap items-center justify-center py-4">
+                <a href="#child" class="px-1 hover:text-blue-500">I Am a Child of God</a>
+                <a href="#grove" class="px-1 hover:text-green-500">My Own Sacred Grove</a>
+                <a href="#baptism" class="px-1 hover:text-purple-500">When I Am Baptized</a>
+                <a href="#gethsemane" class="px-1 hover:text-indigo-500">Gethsemane</a>
+                <a href="#like-jesus" class="px-1 hover:text-yellow-500">I'm Trying to Be Like Jesus</a>
+                <a href="#love" class="px-1 hover:text-pink-500">I Feel My Savior's Love</a>
+                <a href="#temple" class="px-1 hover:text-indigo-500">I Love to See the Temple</a>
+                <a href="#search" class="px-1 hover:text-green-500">Search, Ponder, and Pray</a>
+                <a href="#family" class="px-1 hover:text-yellow-500">Families Can Be Together Forever</a>
+            </nav>
             <main class="flex flex-wrap pt-12 w-full items-start justify-around mx-auto gap-12">
                 <!-- #1: I Am a Child of God -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="child" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-blue-500 flex items-center justify-center">#1</div>
                     <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/jesus-and-child.jpeg')""></div>
                     <div class="bg-blue-500 w-full text-center text-white font-bold py-4">
@@ -118,7 +129,7 @@ I’ll live with him once more.
                 </section>
 
                 <!-- #2: My Own Sacred Grove -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-xl w-full">
+                <section id="grove" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-xl w-full">
                     <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center">#2</div>
                     <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/sacred-grove.jpeg')"></div>
                         <div class="bg-green-500 w-full text-center text-white font-bold py-4">
@@ -214,7 +225,7 @@ I will find my own sacred grove.
                 </section>
 
                 <!-- #3: When I Am Baptized -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="baptism" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-purple-500 flex items-center justify-center">#3</div>
                     <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/rainbow.jpg')""></div>
                     <div class="bg-purple-500 w-full text-center text-white font-bold py-4">
@@ -295,7 +306,7 @@ And improve myself each day.
                 </section>
 
                 <!-- #4: Gethsemane -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="gethsemane" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center">#4</div>
                     <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/gethsemane.jpeg')"></div>
                     <div class="bg-indigo-500 w-full text-center text-white font-bold py-4">
@@ -393,7 +404,7 @@ From Gethsemane.
                 </section>
 
                 <!-- #5: I'm Trying to Be Like Jesus -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="like-jesus" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div 
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-yellow-500 flex items-center justify-center"
                     >
@@ -487,7 +498,7 @@ Enters into my thoughts, saying:
                 </section>
 
                 <!-- #6: I Feel My Savior's Love -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="love" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div 
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-pink-500 flex items-center justify-center"
                     >
@@ -587,7 +598,7 @@ In giving I receive.
 
 
                 <!-- #7: I Love to See the Temple -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="temple" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div 
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center"
                     >
@@ -679,7 +690,7 @@ A fam’ly is forever.
                 </section>
 
                 <!-- #8: Search, Ponder, and Pray -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="search" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div 
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center"
                     >
@@ -763,7 +774,7 @@ I’ll know the scriptures are true.
                 </section>
 
                 <!-- #9: Families Can Be Together Forever -->
-                <section x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="family" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div 
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-yellow-500 flex items-center justify-center"
                     >
