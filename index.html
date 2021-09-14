@@ -699,7 +699,7 @@ A fam’ly is forever.
                 </section>
 
                 <!-- #8: Search, Ponder, and Pray -->
-                <section id="search" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section id="search" x-data="{ showVideo: false, showLyrics: false, showSignLanguage: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center"
                     >
@@ -710,6 +710,15 @@ A fam’ly is forever.
                         <h2 class="text-2xl pb-2 md:text-4xl">Search, Ponder, and Pray</h2>
                         <p class="italic pb-4">Primary</p>
                         <div class="flex items-center justify-center space-x-8">
+                            <span 
+                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                @click="showSignLanguage = !showSignLanguage"
+                                @keyup.enter="showSignLanguage = !showSignLanguage"
+                                title="Show Sign Language Video"
+                                tabindex="0"
+                            >
+                                swipe
+                            </span>
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
@@ -728,6 +737,7 @@ A fam’ly is forever.
                             >
                                 chat
                             </span>
+                            
                             <a
                                 href="https://www.churchofjesuschrist.org/music/library/childrens-songbook/search-ponder-and-pray?lang=eng"
                                 target="_blank"
@@ -738,6 +748,24 @@ A fam’ly is forever.
                                 </span>
                             </a>
                         </div>
+
+                        <video 
+                            x-show="showSignLanguage"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90"
+                            width="100%" 
+                            height="315" 
+                            class="py-4"
+                            controls
+                        >
+                            <source src="static/videos/search_ponder_pray.mp4" type="video/mp4">   
+                            Sorry, your browser does not support the video tag.
+                        </video>
+
                         <iframe
                             x-show="showVideo"
                             x-transition:enter="transition ease-out duration-300"
