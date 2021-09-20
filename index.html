@@ -34,7 +34,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="w-full pb-16 md:pb-24">
+        <div class="w-full pb-8 md:pb-16">
             <header id="header" class="px-4 py-10 bg-yellow-200 w-full sticky">
                 <h1 class="text-center text-2xl font-bold md:text-5xl">Lindon 13th Ward</h1>
                 <h2 class="text-center text-xl font-bold md:text-3xl">Children's Sacrament Meeting Presentation Songs</h2>
@@ -717,7 +717,10 @@ A fam’ly is forever.
                 </section>
 
                 <!-- #8: Search, Ponder, and Pray -->
-                <section id="search" x-data="{ showVideo: false, showLyrics: false, showSignLanguage: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <section 
+                    id="search" 
+                    x-data="{ showVideo: false, showLyrics: false, showSignLanguage: false }" 
+                    class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
                     <div
                         class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center"
                     >
@@ -919,9 +922,24 @@ For eternity.
                     </div>
                 </section>
             </main>
-            <a href="#header" class="mt-12 flex items-center justify-center space-x-2 w-full text-center text-xl font-bold hover:text-blue-500"><span class="material-icons">
-                arrow_upward
-                </span>To Top</a>
+            <div class="flex items-center justify-center pt-12">
+                <a 
+                    href="/static/documents/lyrics.pdf" 
+                    download="" 
+                    title="Download Printable Lyrics PDF"
+                    class="text-center"
+                >
+                    <span class="material-icons text-5xl text-black hover:text-green-500 text-center">
+                        print
+                    </span>
+                </a>
+            </div>
+            <a href="#header" class="mt-4 flex items-center justify-center space-x-2 w-full text-center text-xl font-bold hover:text-blue-500">
+                <span class="material-icons">
+                    arrow_upward
+                </span>
+                To Top
+            </a>
         </div>
         <footer class="h-32 bg-yellow-200 flex flex-col items-center justify-center space-y-8 md:space-y-0 md:justify-between md:flex-row md:h-24">
             <div class="sharethis-inline-share-buttons pl-4"></div>
