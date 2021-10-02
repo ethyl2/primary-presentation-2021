@@ -24,96 +24,164 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]--> 
-        <div id="main" class="min-h-screen flex flex-col items-center justify-start">
-            <div class="w-20 h-20 flex items-center justify-center mt-4 md:w-32 md:h-32">
-                <img src="/static/images/flame.png" id="flame" class="transition-all ease-in-out w-16 h-16 md:w-20 md:h-20" alt="flame" />
-            </div>
-            <div class="pids-wrapper flex flex-col-reverse items-center justify-center rounded-full px-4 py-6 mt-2 border bg-gray-100 shadow">
-                <div class="pid h-8 md:h-10 w-10" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10"></div>
-                <div class="pid h-8 md:h-10 w-10" style="border-top-left-radius: 5px; border-top-right-radius: 5px;"></div>
-            </div>
-            <div class="w-20 h-20 mb-12 flex items-center justify-center mt-2 md:w-32 md:h-32">
-                <img src="/static/images/snowflake.png" id="snowflake" class="transition-all ease-in-out w-16 h-16 md:w-20 md:h-20" alt="snowflake"></div>
-            </div>
-            <footer class="h-24 bg-green-200 flex flex-col items-end justify-center w-full">
-                <a class="pr-4 hover:underline" href="/primary-presentation-2021/">v1</a>
-                <p class="pr-4">&copy; <span id="year">2021</span> <a href="https://github.com/ethyl2" target="_blank">Heather Nuffer</a></p>
-            </footer>
+        <div class="bg-yellow-500">
+            <h1 class="text-center text-xl font-bold pt-2 text-white text-3xl">
+                <span style="display: inline-block;
+                -moz-transform: scale(-1, 1);
+                -webkit-transform: scale(-1, 1);
+                -o-transform: scale(-1, 1);
+                -ms-transform: scale(-1, 1);
+                transform: scale(-1, 1);">🎶</span> Singometer 🎶</h1>
+            <p class="text-center italic py-1 text-white text-xs md:text-base">Allow access to the microphone when prompted & then start singing. See how much you can heat things up!</p>
         </div>
+        <div class="flex items-center justify-center">
+            <div 
+                class="uppercase font-bold text-2xl pr-8 pb-12 md:pb-8"
+                style="text-orientation: upright; writing-mode: vertical-lr;"
+                >
+                <h1>Singometer</h1>
+            </div>
+            <div id="main" class="min-h-screen flex flex-col items-center justify-start">
+                <div class="w-20 h-20 flex items-center justify-center md:w-32 md:h-32">
+                    <img src="/static/images/flame.png" id="flame" class="transition-all ease-in-out w-16 h-16 md:w-20 md:h-20" alt="flame" />
+                </div>
+                <div class="flex flex-col-reverse items-center justify-center rounded-full px-4 py-6 border bg-gray-100 shadow">
+                    <div 
+                        class="pid h-8 md:h-10 w-10 border-l border-r border-b border-gray-300" 
+                        style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"
+                    ></div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div class="pid h-8 md:h-10 w-10 border-l border-r border-gray-300">
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                    <div 
+                        class="pid h-8 md:h-10 w-10 border-l border-r border-t border-gray-300" 
+                        style="border-top-left-radius: 5px; border-top-right-radius: 5px;"
+                    >
+                        <div class="w-2/3 h-full border-b border-gray-300"></div>
+                    </div>
+                </div>
+                <div class="w-20 h-20 mb-12 flex items-center justify-center mt-2 md:w-32 md:h-32">
+                    <img 
+                        src="/static/images/snowflake.png" 
+                        id="snowflake" 
+                        class="transition-all ease-in-out w-16 h-16 md:w-20 md:h-20" 
+                        alt="snowflake"
+                    />
+                </div>
+            </div> 
+            <div class="flex flex-col-reverse items-start justify-between text-lg space-y-1 pb-8 pl-2 md:space-y-3">
+                <h2 class="degree mt-1 md:mt-3">Frozen <span class="transition-all ease-in-out opacity-0 emoji">🧊</span></h2>
+                <h2 class="degree">Frosty <span class="transition-all ease-in-out opacity-0 emoji">☃️</span></h2>
+                <h2 class="degree">Cold <span class="transition-all ease-in-out opacity-0 emoji">🥶</span></h2>
+                <h2 class="degree">Warm <span class="transition-all ease-in-out opacity-0 emoji">🛏️</span></h2>
+                <h2 class="degree">Toasty <span class="transition-all ease-in-out opacity-0 emoji">🍞</span></h2>
+                <h2 class="degree">Hot <span class="transition-all ease-in-out opacity-0 emoji">🌶️</span></h2>
+                <h2 class="degree">Simmering <span class="transition-all ease-in-out opacity-0 emoji">🍜</span></h2>
+                <h2 class="degree">Roasting <span class="transition-all ease-in-out opacity-0 emoji">☀️</span></h2>
+                <h2 class="degree">Sizzle <span class="transition-all ease-in-out opacity-0 emoji">🥓</span></h2>
+                <h2 class="degree">On Fire! <span class="transition-all ease-in-out opacity-0 emoji">🔥</span></h2>
+            </div> 
+        </div>
+        <footer class="h-24 flex flex-col items-end justify-center w-full" style="background: #92D8D7">
+            <a class="pr-4 hover:underline" href="/primary-presentation-2021/">v1</a>
+            <p class="pr-4">&copy; <span id="year">2021</span> <a href="https://github.com/ethyl2" target="_blank">Heather Nuffer</a></p>
+        </footer>
         <script type="text/javascript">
             // Adapted from https://stackoverflow.com/questions/33322681/checking-microphone-volume-in-javascript/50279260#50279260
-            const backgroundDiv = document.querySelector('#main')
-            const flameDiv = document.querySelector('#flame')
-            const snowflakeDiv = document.querySelector('#snowflake')
-            const smallClasses = ['w-16', 'h-16', 'md:w-20', 'md:h-20']
-            const largeClasses = ['w-20', 'h-20', 'md:w-32', 'md:h-32']
-            console.log(...smallClasses)
-           
-            navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-                .then(function(stream) {
-                audioContext = new AudioContext();
-                analyser = audioContext.createAnalyser();
-                microphone = audioContext.createMediaStreamSource(stream);
-                javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
 
-                analyser.smoothingTimeConstant = 0.8;
-                analyser.fftSize = 1024;
+            window.addEventListener('load', () => {
+                const all_pids = document.querySelectorAll('.pid')
+                const backgroundDiv = document.querySelector('#main')
+                const flameDiv = document.querySelector('#flame')
+                const snowflakeDiv = document.querySelector('#snowflake')
+                const degrees = document.querySelectorAll('.degree')
+                const emojis = document.querySelectorAll('.emoji')
+                console.log(emojis)
+                const smallClasses = ['w-16', 'h-16', 'md:w-20', 'md:h-20']
+                const largeClasses = ['w-20', 'h-20', 'md:w-32', 'md:h-32']
+            
+                navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+                    .then(function(stream) {
+                    audioContext = new AudioContext();
+                    analyser = audioContext.createAnalyser();
+                    microphone = audioContext.createMediaStreamSource(stream);
+                    javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
 
-                microphone.connect(analyser);
-                analyser.connect(javascriptNode);
-                javascriptNode.connect(audioContext.destination);
-                javascriptNode.onaudioprocess = function() {
-                    var array = new Uint8Array(analyser.frequencyBinCount);
-                    analyser.getByteFrequencyData(array);
-                    var values = 0;
+                    analyser.smoothingTimeConstant = 0.8;
+                    analyser.fftSize = 1024;
 
-                    var length = array.length;
-                    for (var i = 0; i < length; i++) {
-                        values += (array[i]);
+                    microphone.connect(analyser);
+                    analyser.connect(javascriptNode);
+                    javascriptNode.connect(audioContext.destination);
+                    javascriptNode.onaudioprocess = function() {
+                        const array = new Uint8Array(analyser.frequencyBinCount);
+                        analyser.getByteFrequencyData(array);
+                        let values = 0;
+
+                        const length = array.length;
+                        for (let i = 0; i < length; i++) {
+                            values += (array[i]);
+                        }
+
+                        const average = values / length;
+                        displayVolume(average);
                     }
-
-                    var average = values / length;
-
-                   // console.log(Math.round(average));
-                    colorPids(average);
+                })
+                .catch(function(err) {
+                    /* handle the error */
+                });
+                function displayVolume(vol) {
+                    const amount_of_pids = Math.round(vol/10);
+                    const elem_range = [... all_pids].slice(0, amount_of_pids)
+                
+                    for (var i = 0; i < all_pids.length; i++) {
+                        all_pids[i].style.backgroundColor="#e6e7e8";
+                        degrees[i].classList.remove('text-gray-900', 'font-bold')
+                        degrees[i].classList.add('text-gray-300', 'font-thin')
+                        emojis[i].classList.add('opacity-10')
+                        emojis[i].classList.remove('opacity-100')
+                    }
+                    for (var i = 0; i < elem_range.length; i++) {
+                        elem_range[i].style.backgroundColor="red"
+                        degrees[i].classList.remove('text-gray-300', 'font-thin')
+                        degrees[i].classList.add('text-gray-900', 'font-bold')
+                        emojis[i].classList.add('opacity-100')
+                        emojis[i].classList.remove('opacity-10')
+                    }
+                    if (elem_range.length > 5) {
+                        flameDiv.classList.remove(...smallClasses)
+                        flameDiv.classList.add(...largeClasses)
+                        snowflakeDiv.classList.remove(...largeClasses)
+                        snowflakeDiv.classList.add(...smallClasses)
+                    } else {
+                        snowflakeDiv.classList.remove(...smallClasses)
+                        snowflakeDiv.classList.add(...largeClasses)
+                        flameDiv.classList.remove(...largeClasses)
+                        flameDiv.classList.add(...smallClasses)
+                    }
                 }
             })
-            .catch(function(err) {
-                /* handle the error */
-            });
-            function colorPids(vol) {
-                let all_pids = document.querySelectorAll('.pid')
-                
-                let amount_of_pids = Math.round(vol/10);
-                let elem_range = [... all_pids].slice(0, amount_of_pids)
-                // console.log(elem_range)
-                for (var i = 0; i < all_pids.length; i++) {
-                    all_pids[i].style.backgroundColor="#e6e7e8";
-                }
-                for (var i = 0; i < elem_range.length; i++) {
-                    // console.log(elem_range[i]);
-                    elem_range[i].style.backgroundColor="red";
-                }
-                if (elem_range.length > 5) {
-                    flameDiv.classList.remove(...smallClasses)
-                    flameDiv.classList.add(...largeClasses)
-                    snowflakeDiv.classList.remove(...largeClasses)
-                    snowflakeDiv.classList.add(...smallClasses)
-                } else {
-                    snowflakeDiv.classList.remove(...smallClasses)
-                    snowflakeDiv.classList.add(...largeClasses)
-                    flameDiv.classList.remove(...largeClasses)
-                    flameDiv.classList.add(...smallClasses)
-                }
-            }
         </script>
     </body>
 </html>
