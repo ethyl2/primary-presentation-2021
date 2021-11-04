@@ -24,21 +24,22 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]--> 
-        <div class="bg-green-100 h-screen flex flex-col justify-center items-center">
-            <h1 class="text-center text-2xl font-bold md:text-5xl">Lindon 13th Ward</h1>
-            <h2 class="text-center text-xl font-bold pb-12 md:text-3xl">Children's Sacrament Meeting Presentation Songs</h2>
+        <div class="flex flex-col items-center justify-center h-screen bg-green-100">
+            <h1 class="text-2xl font-bold text-center md:text-5xl">Lindon 13th Ward</h1>
+            <h2 class="pb-12 text-xl font-bold text-center md:text-3xl">Children's Sacrament Meeting Presentation Songs</h2>
             <div 
-                class="max-w-4xl mx-auto relative"
+                class="relative max-w-4xl mx-auto"
                 x-data="{ activeSlide: 1, slides: [
                         { index: 1, imageUrl: 'static/images/jesus-and-child.jpeg', color: 'rgb(191, 219, 254)', title: 'I Am a Child of God', audioUrl: 'static/audio/2002-01-0010-i-am-a-child-of-god-words-and-music-192k-eng.mp3'},
-                        { index: 2, imageUrl: 'static/images/sacred-grove.jpeg', color: 'rgb(167, 243, 208)', title: 'My Own Sacred Grove' },
-                        { index: 3, imageUrl: 'static/images/rainbow.jpg', color: 'rgb(221, 214, 254)', title: 'When I Am Baptized', audioUrl: 'static/audio/2002-01-0920-when-i-am-baptized-words-and-music-192k-eng.mp3'},
-                        { index: 4, imageUrl: 'static/images/gethsemane.jpeg', color: 'rgb(199, 210, 254)', title: 'Gethsemane'},
-                        { index: 5, imageUrl: 'static/images/arise_walk.jpeg', color: 'rgb(253, 230, 138)', title: 'I\'m Trying to Be Like Jesus', audioUrl: 'static/audio/2002-01-0740-im-trying-to-be-like-jesus-words-and-music-192k-eng.mp3'},
-                        { index: 6, imageUrl: 'static/images/perfect-love.jpg', color: 'rgb(251, 207, 232)', title: 'I Feel My Savior\'s Love', audioUrl: 'static/audio/2002-01-0710-i-feel-my-saviors-love-words-and-music-192k-eng.mp3'},
-                        { index: 7, imageUrl: 'static/images/lindon-temple.jpg', color: 'rgb(199, 210, 254)', title: 'I Love to See the Temple', audioUrl: 'static/audio/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3'},
-                        { index: 8, imageUrl: 'static/images/family_scripture_study.jpeg', color: 'rgb(167, 243, 208)', title: 'Search, Ponder, and Pray', audioUrl: 'static/audio/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3'},
-                        { index: 9, imageUrl: 'static/images/family_temple_grounds.jpeg', color: 'rgb(253, 230, 138)', title: 'Families Can Be Together Forever', audioUrl: 'static/audio/2002-01-1590-families-can-be-together-forever-words-and-music-192k-eng.mp3'}
+                        { index: 2, imageUrl: 'static/images/first-vision.jpeg', color: 'rgb(253, 230, 138)', title: 'Joseph Smith\'s First Vision', audioUrl: 'static/audio/2001-01-0260-joseph-smiths-first-prayer-vocal-and-instrumental-192k-eng.mp3'},
+                        { index: 3, imageUrl: 'static/images/sacred-grove.jpeg', color: 'rgb(167, 243, 208)', title: 'My Own Sacred Grove' },
+                        { index: 4, imageUrl: 'static/images/rainbow.jpg', color: 'rgb(221, 214, 254)', title: 'When I Am Baptized', audioUrl: 'static/audio/2002-01-0920-when-i-am-baptized-words-and-music-192k-eng.mp3'},
+                        { index: 5, imageUrl: 'static/images/gethsemane.jpeg', color: 'rgb(199, 210, 254)', title: 'Gethsemane'},
+                        { index: 6, imageUrl: 'static/images/arise_walk.jpeg', color: 'rgb(253, 230, 138)', title: 'I\'m Trying to Be Like Jesus', audioUrl: 'static/audio/2002-01-0740-im-trying-to-be-like-jesus-words-and-music-192k-eng.mp3'},
+                        { index: 7, imageUrl: 'static/images/perfect-love.jpg', color: 'rgb(251, 207, 232)', title: 'I Feel My Savior\'s Love', audioUrl: 'static/audio/2002-01-0710-i-feel-my-saviors-love-words-and-music-192k-eng.mp3'},
+                        { index: 8, imageUrl: 'static/images/lindon-temple.jpg', color: 'rgb(199, 210, 254)', title: 'I Love to See the Temple', audioUrl: 'static/audio/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3'},
+                        { index: 9, imageUrl: 'static/images/family_scripture_study.jpeg', color: 'rgb(167, 243, 208)', title: 'Search, Ponder, and Pray', audioUrl: 'static/audio/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3'},
+                        { index: 10, imageUrl: 'static/images/family_temple_grounds.jpeg', color: 'rgb(253, 230, 138)', title: 'Families Can Be Together Forever', audioUrl: 'static/audio/2002-01-1590-families-can-be-together-forever-words-and-music-192k-eng.mp3'}
                     ] 
                 }"
             >
@@ -46,26 +47,26 @@
               <template x-for="slide in slides" :key="slide.index">
                 <div
                     x-show="activeSlide === slide.index"
-                    class="relative h-64 w-64 md:h-96 md:w-96 rounded-lg bg-cover bg-center"
+                    class="relative w-64 h-64 bg-center bg-cover rounded-lg md:h-96 md:w-96"
                     :style="'background-image: url(' + slide.imageUrl + ')'"
                 >
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-16 h-16 font-bold text-2xl rounded-full flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-16 h-16 text-2xl font-bold rounded-full -top-6 left-2 -md:left-6"
                         :style="'background: ' + slide.color"
                         x-text="'# '+ slide.index"
                         >
                     </div>
                     <audio 
                         controls 
-                        class="absolute left-2 bottom-2 z-50 w-60 md:left-8 md:w-80"
+                        class="absolute z-50 left-2 bottom-2 w-60 md:left-8 md:w-80"
                         x-show="slide.audioUrl"
                     >
                         <source :src="slide.audioUrl" type="audio/mp3" preload="auto">
                         Your browser does not support the audio tag.
                     </audio>
                     <iframe 
-                        class="absolute left-10 bottom-2 z-50" 
-                        x-show="activeSlide === 2" 
+                        class="absolute z-50 left-10 bottom-2" 
+                        x-show="activeSlide === 3" 
                         width="75%" 
                         height="100" 
                         scrolling="no" 
@@ -74,8 +75,8 @@
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941164321&color=%23edd6c4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
                     </iframe>
                     <iframe 
-                        x-show="activeSlide === 4"
-                        class="absolute left-10 bottom-2 z-50" 
+                        x-show="activeSlide === 5"
+                        class="absolute z-50 left-10 bottom-2" 
                         src="https://open.spotify.com/embed/track/5iY7o3EtiuzmNmiBykuxbd?theme=0" 
                         width="80%" 
                         height="80" 
@@ -84,9 +85,9 @@
                         allow="encrypted-media">
                     </iframe>
                     <p 
-                        class="absolute top-10 w-full text-white font-bold text-xl text-center" 
+                        class="absolute w-full text-xl font-bold text-center text-white top-10" 
                         x-text="slide.title"
-                        :style="activeSlide === 9 ? 'color: black;' : ''"
+                        :style="activeSlide === 10 ? 'color: black;' : ''"
                     ></p>
                 </div>
               </template>
@@ -95,14 +96,14 @@
               <div class="absolute inset-0 flex">
                 <div class="flex items-center justify-start w-1/2">
                   <button 
-                    class="bg-white bg-opacity-75 text-green-500 hover:text-purple-500 font-extrabold hover:bg-opacity-100 hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                    class="w-12 h-12 -ml-6 font-extrabold text-green-500 bg-white bg-opacity-75 rounded-full hover:text-purple-500 hover:bg-opacity-100 hover:shadow-lg"
                     x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
                     &#8592;
                    </button>
                 </div>
                 <div class="flex items-center justify-end w-1/2">
                   <button 
-                    class="bg-white bg-opacity-75 text-green-500 hover:text-purple-500 font-extrabold hover:bg-opacity-100 hover:shadow rounded-full w-12 h-12 -mr-6"
+                    class="w-12 h-12 -mr-6 font-extrabold text-green-500 bg-white bg-opacity-75 rounded-full hover:text-purple-500 hover:bg-opacity-100 hover:shadow"
                     x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
                     &#8594;
                   </button>
@@ -110,10 +111,10 @@
               </div>
           
               <!-- Buttons -->
-              <div class="absolute w-full flex items-center justify-center px-4">
+              <div class="absolute flex items-center justify-center w-full px-4">
                 <template x-for="slide in slides" :key="slide">
                   <button
-                    class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-green-600 hover:shadow-lg"
+                    class="flex-1 w-4 h-2 mx-2 mt-4 mb-0 overflow-hidden transition-colors duration-200 ease-out rounded-full hover:bg-green-600 hover:shadow-lg"
                     :class="{ 
                         'bg-purple-600': activeSlide === slide.index,
                         'bg-green-300': activeSlide !== slide.index 
@@ -127,7 +128,7 @@
             
             </div>
           </div>
-          <footer class="h-24 bg-green-200 flex flex-col items-end justify-center">
+          <footer class="flex flex-col items-end justify-center h-24 bg-green-200">
             <a class="pr-4 hover:underline" href="/primary-presentation-2021/">v1</a>
             <p class="pr-4">&copy; <span id="year">2021</span> <a href="https://github.com/ethyl2" target="_blank">Heather Nuffer</a></p>
         </footer>
