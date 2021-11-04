@@ -35,12 +35,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="w-full pb-8 md:pb-16">
-            <header id="header" class="px-4 py-10 bg-yellow-200 w-full sticky">
-                <h1 class="text-center text-2xl font-bold md:text-5xl">Lindon 13th Ward</h1>
-                <h2 class="text-center text-xl font-bold md:text-3xl">Children's Sacrament Meeting Presentation Songs</h2>
+            <header id="header" class="sticky w-full px-4 py-10 bg-yellow-200">
+                <h1 class="text-2xl font-bold text-center md:text-5xl">Lindon 13th Ward</h1>
+                <h2 class="text-xl font-bold text-center md:text-3xl">Children's Sacrament Meeting Presentation Songs</h2>
             </header>
-            <nav class="mx-4 divide-x flex flex-wrap items-center justify-center py-4">
+            <nav class="flex flex-wrap items-center justify-center py-4 mx-4 divide-x">
                 <a href="#child" class="px-1 hover:text-blue-500">I Am a Child of God</a>
+                <a href="#prayer" class="px-1 hover:text-blue-500">Joseph Smith's First Prayer</a>
                 <a href="#grove" class="px-1 hover:text-green-500">My Own Sacred Grove</a>
                 <a href="#baptism" class="px-1 hover:text-purple-500">When I Am Baptized</a>
                 <a href="#gethsemane" class="px-1 hover:text-indigo-500">Gethsemane</a>
@@ -50,30 +51,30 @@
                 <a href="#search" class="px-1 hover:text-green-500">Search, Ponder, and Pray</a>
                 <a href="#family" class="px-1 hover:text-yellow-500">Families Can Be Together Forever</a>
             </nav>
-            <main class="flex flex-wrap pt-12 w-full items-start justify-around mx-auto gap-12">
+            <main class="flex flex-wrap items-start justify-around w-full gap-12 pt-12 mx-auto">
                 <!-- #1: I Am a Child of God -->
                 <section 
                     id="child" 
                     x-data="{ showVideo: false, showLyrics: false }" 
-                    class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full"
+                    class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl"
                 >
-                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-blue-500 flex items-center justify-center">#1</div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/jesus-and-child.jpeg')""></div>
-                    <div class="bg-blue-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">I Am a Child of God</h2>
-                        <p class="italic pb-4">Primary and Congregation</p>
+                    <div class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-blue-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32">#1</div>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/jesus-and-child.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-blue-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">I Am a Child of God</h2>
+                        <p class="pb-4 italic">Prelude</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-blue-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-blue-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-blue-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-blue-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -86,7 +87,7 @@
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-blue-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-blue-800">
                                     music_note
                                 </span>
                             </a>
@@ -109,7 +110,7 @@
                             allowfullscreen
                         ></iframe>
                         <pre
-                            class="lyrics pt-4 text-base sm:text-xl"
+                            class="pt-4 text-base lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -142,29 +143,134 @@ I’ll live with him once more.
                     </div>
                 </section>
 
-                <!-- #2: My Own Sacred Grove -->
+                <!-- #2: Joseph Smith's First Prayer -->
+                <section 
+                    id="prayer" 
+                    x-data="{ showVideo: false, showLyrics: false }" 
+                    class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl"
+                >
+                    <div class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-yellow-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32">#2</div>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/first-vision.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-yellow-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">Joseph Smith's First Prayer</h2>
+                        <p class="pb-4 italic">Primary and Congregation</p>
+                        <div class="flex items-center justify-center space-x-8">
+                            <span
+                                @click="showVideo = !showVideo"
+                                @keyup.enter="showVideo = !showVideo"
+                                class="text-5xl cursor-pointer material-icons hover:text-blue-800"
+                                title="Play Video"
+                                tabindex="0"
+                            >
+                                music_video
+                            </span>
+                            <span
+                                class="text-5xl cursor-pointer material-icons hover:text-blue-800"
+                                @click="showLyrics = !showLyrics"
+                                @keyup.enter="showLyrics = !showLyrics"
+                                title="Show Lyrics"
+                                tabindex="0"
+                            >
+                                chat
+                            </span>
+                            <a
+                                href="https://www.churchofjesuschrist.org/music/library/hymns/joseph-smiths-first-prayer?lang=eng"
+                                target="_blank"
+                                title="Go to Sheet Music"
+                                >
+                                <span class="text-5xl cursor-pointer material-icons hover:text-blue-800">
+                                    music_note
+                                </span>
+                            </a>
+                        </div>
+                        <iframe
+                            x-show="showVideo"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90"
+                            class="mx-auto"
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/Dz064mMK8Yg"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <pre
+                            class="pt-4 text-base lyrics sm:text-xl"
+                            x-show="showLyrics"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform scale-90"
+                            x-transition:enter-end="opacity-100 transform scale-100"
+                            x-transition:leave="transition ease-in duration-300"
+                            x-transition:leave-start="opacity-100 transform scale-100"
+                            x-transition:leave-end="opacity-0 transform scale-90" >
+1. Oh, how lovely was the morning!
+Radiant beamed the sun above.
+Bees were humming, sweet birds singing,
+Music ringing thru the grove,
+When within the shady woodland
+Joseph sought the God of love,
+When within the shady woodland
+Joseph sought the God of love.
+
+2. Humbly kneeling, sweet appealing—
+’Twas the boy’s first uttered prayer—
+When the pow’rs of sin assailing
+Filled his soul with deep despair;
+But undaunted, still he trusted
+In his Heav’nly Father’s care,
+But undaunted, still he trusted
+In his Heav’nly Father’s care.
+
+3. Suddenly a light descended,
+Brighter far than noonday sun,
+And a shining, glorious pillar
+O’er him fell, around him shone,
+While appeared two heav’nly beings,
+God the Father and the Son,
+While appeared two heav’nly beings,
+God the Father and the Son.
+
+4. “Joseph, this is my Beloved;
+Hear him!” Oh, how sweet the word!
+Joseph’s humble prayer was answered,
+And he listened to the Lord.
+Oh, what rapture filled his bosom,
+For he saw the living God,
+Oh, what rapture filled his bosom,
+For he saw the living God.
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- #3: My Own Sacred Grove -->
                 <section 
                     id="grove" 
                     x-data="{ showVideo: false, showLyrics: false }" 
-                    class="relative flex flex-col items-center justify-center max-w-xl w-full"
+                    class="relative flex flex-col items-center justify-center w-full max-w-xl"
                 >
-                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center">#2</div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/sacred-grove.jpeg')"></div>
-                        <div class="bg-green-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                            <h2 class="text-2xl pb-2 md:text-4xl">My Own Sacred Grove</h2>
-                            <p class="italic pb-4">Primary</p>
+                    <div class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-green-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32">#3</div>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/sacred-grove.jpeg')"></div>
+                        <div class="w-full py-4 font-bold text-center text-white bg-green-500 shadow-2xl">
+                            <h2 class="pb-2 text-2xl md:text-4xl">My Own Sacred Grove</h2>
+                            <p class="pb-4 italic">Primary</p>
                             <div class="flex items-center justify-center space-x-8">
                                 <span
                                     @click="showVideo = !showVideo"
                                     @keyup.enter="showVideo = !showVideo"
-                                    class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                    class="text-5xl cursor-pointer material-icons hover:text-green-800"
                                     title="Play Video"
                                     tabindex="0"
                                 >
                                     music_video
                                 </span>
                                 <span
-                                    class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                    class="text-5xl cursor-pointer material-icons hover:text-green-800"
                                     @click="showLyrics = !showLyrics"
                                     @keyup.enter="showLyrics = !showLyrics"
                                     title="Show Lyrics"
@@ -177,7 +283,7 @@ I’ll live with him once more.
                                     target="_blank"
                                     title="Go to Sheet Music"
                                     >
-                                    <span class="material-icons text-5xl cursor-pointer hover:text-green-800">
+                                    <span class="text-5xl cursor-pointer material-icons hover:text-green-800">
                                         music_note
                                     </span>
                                 </a>
@@ -200,7 +306,7 @@ I’ll live with him once more.
                                 allowfullscreen>
                             </iframe>
                             <pre
-                                class="lyrics pt-4 text-sm sm:text-lg "
+                                class="pt-4 text-sm lyrics sm:text-lg "
                                 x-show="showLyrics"
                                 x-transition:enter="transition ease-out duration-300"
                                 x-transition:enter-start="opacity-0 transform scale-90"
@@ -249,25 +355,25 @@ I will find my own sacred grove.
                     </div>
                 </section>
 
-                <!-- #3: When I Am Baptized -->
-                <section id="baptism" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
-                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-purple-500 flex items-center justify-center">#3</div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/rainbow.jpg')""></div>
-                    <div class="bg-purple-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">When I Am Baptized</h2>
-                        <p class="italic pb-4">CTR 7 Class</p>
+                <!-- #4: When I Am Baptized -->
+                <section id="baptism" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
+                    <div class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-purple-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32">#4</div>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/rainbow.jpg')""></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-purple-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">When I Am Baptized</h2>
+                        <p class="pb-4 italic">Featuring the CTR 7 Class</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-purple-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-purple-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-purple-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-purple-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -280,7 +386,7 @@ I will find my own sacred grove.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-purple-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-purple-800">
                                     music_note
                                 </span>
                             </a>
@@ -302,7 +408,7 @@ I will find my own sacred grove.
                             allowfullscreen
                         ></iframe>
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -330,25 +436,25 @@ And improve myself each day.
                     </div>
                 </section>
 
-                <!-- #4: Gethsemane -->
-                <section id="gethsemane" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
-                    <div class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center">#4</div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/gethsemane.jpeg')"></div>
-                    <div class="bg-indigo-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">Gethsemane</h2>
-                        <p class="italic pb-4">Primary</p>
+                <!-- #5: Gethsemane -->
+                <section id="gethsemane" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
+                    <div class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-indigo-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32">#5</div>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/gethsemane.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-indigo-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">Gethsemane</h2>
+                        <p class="pb-4 italic">Primary</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-indigo-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-indigo-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -361,7 +467,7 @@ And improve myself each day.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-indigo-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-indigo-800">
                                     music_note
                                 </span>
                             </a>
@@ -384,7 +490,7 @@ And improve myself each day.
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -428,29 +534,29 @@ From Gethsemane.
                     </div>
                 </section>
 
-                <!-- #5: I'm Trying to Be Like Jesus -->
-                <section id="like-jesus" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <!-- #6: I'm Trying to Be Like Jesus -->
+                <section id="like-jesus" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-yellow-500 flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-yellow-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32"
                     >
-                        #5
+                        #6
                     </div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/arise_walk.jpeg')"></div>
-                    <div class="bg-yellow-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">I'm Trying to Be Like Jesus</h2>
-                        <p class="italic pb-4">Primary</p>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/arise_walk.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-yellow-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">I'm Trying to Be Like Jesus</h2>
+                        <p class="pb-4 italic">Primary</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-yellow-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-yellow-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -463,7 +569,7 @@ From Gethsemane.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-yellow-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-yellow-800">
                                     music_note
                                 </span>
                             </a>
@@ -486,7 +592,7 @@ From Gethsemane.
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -524,29 +630,29 @@ Enters into my thoughts, saying:
                     </div>
                 </section>
 
-                <!-- #6: I Feel My Savior's Love -->
-                <section id="love" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <!-- #7: I Feel My Savior's Love -->
+                <section id="love" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-pink-500 flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-pink-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32"
                     >
-                        #6
+                        #7
                     </div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/perfect-love.jpg')"></div>
-                    <div class="bg-pink-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">I Feel My Savior's Love</h2>
-                        <p class="italic pb-4">Activity Day Girls</p>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/perfect-love.jpg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-pink-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">I Feel My Savior's Love</h2>
+                        <p class="pb-4 italic">Featuring the Activity Day Girls</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-pink-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-pink-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-pink-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-pink-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -559,7 +665,7 @@ Enters into my thoughts, saying:
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-pink-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-pink-800">
                                     music_note
                                 </span>
                             </a>
@@ -583,7 +689,7 @@ Enters into my thoughts, saying:
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -624,29 +730,29 @@ In giving I receive.
                 </section>
 
 
-                <!-- #7: I Love to See the Temple -->
-                <section id="temple" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <!-- #8: I Love to See the Temple -->
+                <section id="temple" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-indigo-500 flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-indigo-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32"
                     >
-                        #7
+                        #8
                     </div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/lindon-temple.jpg')"></div>
-                    <div class="bg-indigo-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">I Love to See the Temple</h2>
-                        <p class="italic pb-4">Primary</p>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/lindon-temple.jpg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-indigo-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">I Love to See the Temple</h2>
+                        <p class="pb-4 italic">Primary</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-indigo-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-indigo-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-indigo-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -659,7 +765,7 @@ In giving I receive.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-indigo-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-indigo-800">
                                     music_note
                                 </span>
                             </a>
@@ -683,7 +789,7 @@ In giving I receive.
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -716,23 +822,23 @@ A fam’ly is forever.
                     </div>
                 </section>
 
-                <!-- #8: Search, Ponder, and Pray -->
+                <!-- #9: Search, Ponder, and Pray -->
                 <section 
                     id="search" 
                     x-data="{ showVideo: false, showLyrics: false, showSignLanguage: false }" 
-                    class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                    class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-green-500 flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-green-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32"
                     >
-                        #8
+                        #9
                     </div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/family_scripture_study.jpeg')"></div>
-                    <div class="bg-green-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">Search, Ponder, and Pray</h2>
-                        <p class="italic pb-4">Primary</p>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/family_scripture_study.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-green-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">Search, Ponder, and Pray</h2>
+                        <p class="pb-4 italic">Primary</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span 
-                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-green-800"
                                 @click="showSignLanguage = !showSignLanguage"
                                 @keyup.enter="showSignLanguage = !showSignLanguage"
                                 title="Show Sign Language Video"
@@ -743,14 +849,14 @@ A fam’ly is forever.
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-green-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-green-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-green-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -764,7 +870,7 @@ A fam’ly is forever.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-green-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-green-800">
                                     music_note
                                 </span>
                             </a>
@@ -806,7 +912,7 @@ A fam’ly is forever.
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -832,29 +938,29 @@ I’ll know the scriptures are true.
                     </div>
                 </section>
 
-                <!-- #9: Families Can Be Together Forever -->
-                <section id="family" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center max-w-sm sm:max-w-xl w-full">
+                <!-- #10: Families Can Be Together Forever -->
+                <section id="family" x-data="{ showVideo: false, showLyrics: false }" class="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-xl">
                     <div
-                        class="absolute -top-6 left-2 -md:left-6 w-24 h-24 md:w-32 md:h-32 font-bold text-4xl rounded-full bg-yellow-500 flex items-center justify-center"
+                        class="absolute flex items-center justify-center w-24 h-24 text-4xl font-bold bg-yellow-500 rounded-full -top-6 left-2 -md:left-6 md:w-32 md:h-32"
                     >
-                        #9
+                        #10
                     </div>
-                    <div class="bg-center bg-cover w-full h-72" style="background-image: url('static/images/family_temple_grounds.jpeg')"></div>
-                    <div class="bg-yellow-500 w-full text-center text-white font-bold py-4 shadow-2xl">
-                        <h2 class="text-2xl pb-2 md:text-4xl">Families Can Be Together Forever</h2>
-                        <p class="italic pb-4">Primary and Congregation</p>
+                    <div class="w-full bg-center bg-cover h-72" style="background-image: url('static/images/family_temple_grounds.jpeg')"></div>
+                    <div class="w-full py-4 font-bold text-center text-white bg-yellow-500 shadow-2xl">
+                        <h2 class="pb-2 text-2xl md:text-4xl">Families Can Be Together Forever</h2>
+                        <p class="pb-4 italic">Primary and Congregation</p>
                         <div class="flex items-center justify-center space-x-8">
                             <span
                                 @click="showVideo = !showVideo"
                                 @keyup.enter="showVideo = !showVideo"
-                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-yellow-800"
                                 title="Play Video"
                                 tabindex="0"
                             >
                                 music_video
                             </span>
                             <span
-                                class="material-icons text-5xl cursor-pointer hover:text-yellow-800"
+                                class="text-5xl cursor-pointer material-icons hover:text-yellow-800"
                                 @click="showLyrics = !showLyrics"
                                 @keyup.enter="showLyrics = !showLyrics"
                                 title="Show Lyrics"
@@ -867,7 +973,7 @@ I’ll know the scriptures are true.
                                 target="_blank"
                                 title="Go to Sheet Music"
                                 >
-                                <span class="material-icons text-5xl cursor-pointer hover:text-yellow-800">
+                                <span class="text-5xl cursor-pointer material-icons hover:text-yellow-800">
                                     music_note
                                 </span>
                             </a>
@@ -891,7 +997,7 @@ I’ll know the scriptures are true.
                         ></iframe>
 
                         <pre
-                            class="lyrics pt-4 text-sm sm:text-xl"
+                            class="pt-4 text-sm lyrics sm:text-xl"
                             x-show="showLyrics"
                             x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 transform scale-90"
@@ -929,25 +1035,44 @@ For eternity.
                     title="Download Printable Lyrics PDF"
                     class="text-center"
                 >
-                    <span class="material-icons text-5xl text-black hover:text-green-500 text-center">
+                    <span class="text-5xl text-center text-black material-icons hover:text-green-500">
                         print
                     </span>
                 </a>
             </div>
-            <a href="#header" class="mt-4 flex items-center justify-center space-x-2 w-full text-center text-xl font-bold hover:text-blue-500">
+            <a href="#header" class="flex items-center justify-center w-full mt-4 space-x-2 text-xl font-bold text-center hover:text-blue-500">
                 <span class="material-icons">
                     arrow_upward
                 </span>
                 To Top
             </a>
         </div>
-        <footer class="h-32 bg-yellow-200 flex flex-col items-center justify-center space-y-8 md:space-y-0 md:justify-between md:flex-row md:h-24">
-            <div class="sharethis-inline-share-buttons pl-4"></div>
-            <div class="flex items-end justify-between w-full md:justify-end md:flex-col md:w-auto">
-                <a class="pl-2 md:pr-0 md:pr-4 hover:underline" href="/primary-presentation-2021/carousel.html">v2</a>
-                <a class="pl-2 md:pr-0 md:pr-4 hover:underline" href="/primary-presentation-2021/singometer.html">singometer</a>
-                <p class="pr-2 md:pr-4">&copy; <span id="year">2021</span> <a href="https://github.com/ethyl2" target="_blank">Heather Nuffer</a></p>
+        <footer class="h-32 bg-yellow-200">
+            <div class="flex flex-col items-center justify-center space-y-8 md:space-y-0 md:justify-between md:flex-row">
+                <div class="pt-4 sharethis-inline-share-buttons md:pl-4"></div>
+                <div class="flex items-center justify-between w-full md:justify-end md:flex-col md:w-auto md:items-end md:pr-2 md:pt-2">
+                    <a 
+                        href="https://open.spotify.com/playlist/5bPULy4rMexP1P3m7ayno7?si=7eb9575482284750" 
+                        target="_blank"
+                        class="font-semibold text-purple-700 hover:text-purple-500 focus:text-purple-600"
+                    >
+                        Spotify Playlist
+                    </a>
+                    <a 
+                        class="font-semibold text-purple-700 hover:text-purple-500 focus:text-purple-600" 
+                        href="/primary-presentation-2021/carousel.html"
+                    >
+                        V2
+                    </a>
+                    <a 
+                        class="font-semibold text-purple-700 hover:text-purple-500 focus:text-purple-600"
+                        href="/primary-presentation-2021/singometer.html"
+                    >
+                        Singometer
+                    </a>
+                </div>
             </div>
+            <p class="text-center">&copy; <span id="year">2021</span> <a href="https://github.com/ethyl2" target="_blank">Heather Nuffer</a></p>
         </footer>
         <script src="js/index.js" async defer></script>
     </body>
