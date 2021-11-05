@@ -11,7 +11,7 @@ const songClues = [
     },
     { 
         name: 'My Own Sacred Grove',
-        clues: ['prayer', 'revelation', 'choices', 'faith', 'pathways', 'answers will come', 'trees'],
+        clues: ['prayer', 'revelation', 'choices', 'faith', 'pathways', 'answers will come', 'trees', 'Joseph Smith'],
         color: '#9bc1bc',
     },
     { 
