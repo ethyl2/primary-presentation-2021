@@ -30,17 +30,20 @@
             <div 
                 class="relative max-w-4xl mx-auto"
                 x-data="{ activeSlide: 1, slides: [
-                        { index: 1, imageUrl: 'static/images/jesus-and-child.jpeg', color: 'rgb(191, 219, 254)', title: 'I Am a Child of God', audioUrl: 'static/audio/2002-01-0010-i-am-a-child-of-god-words-and-music-192k-eng.mp3'},
-                        { index: 2, imageUrl: 'static/images/first-vision.jpeg', color: 'rgb(253, 230, 138)', title: 'Joseph Smith\'s First Vision', audioUrl: 'static/audio/2001-01-0260-joseph-smiths-first-prayer-vocal-and-instrumental-192k-eng.mp3'},
-                        { index: 3, imageUrl: 'static/images/sacred-grove.jpeg', color: 'rgb(167, 243, 208)', title: 'My Own Sacred Grove' },
-                        { index: 4, imageUrl: 'static/images/rainbow.jpg', color: 'rgb(221, 214, 254)', title: 'When I Am Baptized', audioUrl: 'static/audio/2002-01-0920-when-i-am-baptized-words-and-music-192k-eng.mp3'},
-                        { index: 5, imageUrl: 'static/images/gethsemane.jpeg', color: 'rgb(199, 210, 254)', title: 'Gethsemane'},
-                        { index: 6, imageUrl: 'static/images/arise_walk.jpeg', color: 'rgb(253, 230, 138)', title: 'I\'m Trying to Be Like Jesus', audioUrl: 'static/audio/2002-01-0740-im-trying-to-be-like-jesus-words-and-music-192k-eng.mp3'},
-                        { index: 7, imageUrl: 'static/images/perfect-love.jpg', color: 'rgb(251, 207, 232)', title: 'I Feel My Savior\'s Love', audioUrl: 'static/audio/2002-01-0710-i-feel-my-saviors-love-words-and-music-192k-eng.mp3'},
-                        { index: 8, imageUrl: 'static/images/lindon-temple.jpg', color: 'rgb(199, 210, 254)', title: 'I Love to See the Temple', audioUrl: 'static/audio/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3'},
-                        { index: 9, imageUrl: 'static/images/family_scripture_study.jpeg', color: 'rgb(167, 243, 208)', title: 'Search, Ponder, and Pray', audioUrl: 'static/audio/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3'},
-                        { index: 10, imageUrl: 'static/images/family_temple_grounds.jpeg', color: 'rgb(253, 230, 138)', title: 'Families Can Be Together Forever', audioUrl: 'static/audio/2002-01-1590-families-can-be-together-forever-words-and-music-192k-eng.mp3'}
-                    ] 
+                  { index: 1, imageUrl: 'static/images/first-vision.jpeg', color: 'rgb(253, 230, 138)', title: 'Joseph Smith\'s First Prayer', audioUrl: 'static/audio/2001-01-0260-joseph-smiths-first-prayer-vocal-and-instrumental-192k-eng.mp3'},
+                  { index: 2, imageUrl: 'static/images/christus.jpg', color: 'rgb(191, 219, 254)', title: 'I Stand All Amazed', audioUrl: 'static/audio/2001-01-1930-i-stand-all-amazed-vocal-and-instrumental-192k-eng.mp3'},
+                  { index: 3, imageUrl: 'static/images/family_scripture_study.jpeg', color: 'rgb(167, 243, 208)', title: 'Search, Ponder, and Pray', audioUrl: 'static/audio/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3'},
+                  { index: 4, imageUrl: 'static/images/gethsemane.jpeg', color: 'rgb(199, 210, 254)', title: 'Gethsemane'},
+                  { index: 5, imageUrl: 'static/images/perfect-love.jpg', color: 'rgb(251, 207, 232)', title: 'I Feel My Savior\'s Love', audioUrl: 'static/audio/2002-01-0710-i-feel-my-saviors-love-words-and-music-192k-eng.mp3'},
+                  { index: 6, imageUrl: 'static/images/arise_walk.jpeg', color: 'rgb(253, 230, 138)', title: 'I\'m Trying to Be Like Jesus', audioUrl: 'static/audio/2002-01-0740-im-trying-to-be-like-jesus-words-and-music-192k-eng.mp3'},
+                  { index: 7, imageUrl: 'static/images/rainbow.jpg', color: 'rgb(221, 214, 254)', title: 'When I Am Baptized', audioUrl: 'static/audio/2002-01-0920-when-i-am-baptized-words-and-music-192k-eng.mp3'},
+                  { index: 8, imageUrl: 'static/images/lindon-temple.jpg', color: 'rgb(199, 210, 254)', title: 'I Love to See the Temple', audioUrl: 'static/audio/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3'},
+                  { index: 9, imageUrl: 'static/images/sacred-grove.jpeg', color: 'rgb(167, 243, 208)', title: 'My Own Sacred Grove' },
+                  { index: 10, imageUrl: 'static/images/jesus-and-child.jpeg', color: 'rgb(191, 219, 254)', title: 'I Am a Child of God', audioUrl: 'static/audio/2002-01-0010-i-am-a-child-of-god-words-and-music-192k-eng.mp3'},
+                  { index: 11, imageUrl: 'static/images/family_temple_grounds.jpeg', color: 'rgb(253, 230, 138)', title: 'Families Can Be Together Forever', audioUrl: 'static/audio/2002-01-1590-families-can-be-together-forever-words-and-music-192k-eng.mp3'},
+                  
+                  
+                  ] 
                 }"
             >
               <!-- Slides -->
@@ -64,9 +67,11 @@
                         <source :src="slide.audioUrl" type="audio/mp3" preload="auto">
                         Your browser does not support the audio tag.
                     </audio>
+
+                    <!-- MY OWN SACRED GROVE -->
                     <iframe 
                         class="absolute z-50 left-10 bottom-2" 
-                        x-show="activeSlide === 3" 
+                        x-show="activeSlide === 9" 
                         width="75%" 
                         height="100" 
                         scrolling="no" 
@@ -74,8 +79,9 @@
                         allow="autoplay" 
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941164321&color=%23edd6c4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
                     </iframe>
+                    <!-- GETHSEMANE -->
                     <iframe 
-                        x-show="activeSlide === 5"
+                        x-show="activeSlide === 4"
                         class="absolute z-50 left-10 bottom-2" 
                         src="https://open.spotify.com/embed/track/5iY7o3EtiuzmNmiBykuxbd?theme=0" 
                         width="80%" 
@@ -87,7 +93,7 @@
                     <p 
                         class="absolute w-full text-xl font-bold text-center text-white top-10" 
                         x-text="slide.title"
-                        :style="activeSlide === 10 ? 'color: black;' : ''"
+                        :style="activeSlide === 11 ? 'color: black;' : ''"
                     ></p>
                 </div>
               </template>

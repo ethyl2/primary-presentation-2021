@@ -1,23 +1,18 @@
 const songClues = [
     { 
-        name: 'I Am A Child of God',
-        clues: ['parents', 'walk beside me', 'help', 'guide', 'earthly home', 'teach'],
-        color: '#ed6a5a',
-    },
-    { 
         name: 'Joseph Smith\'s First Prayer',
         clues: ['prayer', 'Heavenly Father', 'Hear Him', 'Joseph Smith', 'grove', 'woodland', 'light descended', 'glorious pillar', 'heavenly beings'],
         color: '#f4f1bb',
     },
     { 
-        name: 'My Own Sacred Grove',
-        clues: ['prayer', 'revelation', 'choices', 'faith', 'pathways', 'answers will come', 'trees', 'Joseph Smith'],
-        color: '#9bc1bc',
+        name: 'I Stand All Amazed',
+        clues: ['Jesus', 'grace', 'crucifixion', 'love', 'devotion', 'die for me', 'hands', 'mercy', 'wonderful to me', 'rescue a soul', 'redeem', 'care for me'],
+        color: '#f74d64',
     },
     { 
-        name: 'When I Am Baptized',
-        clues: ['baptism', 'earth', 'life', 'rain', 'rainbows', 'clean', 'best I can'],
-        color: '#e6ebe0',
+        name: 'Search, Ponder, and Pray',
+        clues: ['scriptures', 'testimony', 'true', 'Spirit', 'guide', 'deep inside', 'ponder', 'pray', 'search'],
+        color: '#f2dc5d',
     },
     { 
         name: 'Gethsemane',
@@ -25,14 +20,19 @@ const songClues = [
         color: '#36c9c6',
     },
     { 
+        name: 'I Feel My Savior\'s Love',
+        clues: ['peace', 'shepherd', 'warm', 'follow him', 'heart', 'share', 'serving others', 'blessed', 'give', 'love'],
+        color: '#7f96ff',
+    },
+    { 
         name: 'I\'m Trying to Be Like Jesus',
         clues: ['kindness', 'Jesus', 'serve', 'Holy Spirit', 'love one another', 'gentle', 'deed and thought', 'day of gladness'],
         color: '#935fa7',
     },
     { 
-        name: 'I Feel My Savior\'s Love',
-        clues: ['peace', 'shepherd', 'warm', 'follow him', 'heart', 'share', 'serving others', 'blessed', 'give', 'love'],
-        color: '#7f96ff',
+        name: 'When I Am Baptized',
+        clues: ['baptism', 'earth', 'life', 'rain', 'rainbows', 'clean', 'best I can'],
+        color: '#77f790',
     },
     { 
         name: 'I Love to See the Temple',
@@ -40,9 +40,14 @@ const songClues = [
         color: '#dbfe87 ',
     },
     { 
-        name: 'Search, Ponder, and Pray',
-        clues: ['scriptures', 'testimony', 'true', 'Spirit', 'guide', 'deep inside', 'ponder', 'pray', 'search'],
-        color: '#f2dc5d',
+        name: 'My Own Sacred Grove',
+        clues: ['prayer', 'revelation', 'choices', 'faith', 'pathways', 'answers will come', 'trees', 'Joseph Smith'],
+        color: '#9bc1bc',
+    },
+    { 
+        name: 'I Am A Child of God',
+        clues: ['parents', 'walk beside me', 'help', 'guide', 'earthly home', 'teach'],
+        color: '#ed6a5a',
     },
     { 
         name: 'Families Can Be Together Forever',
